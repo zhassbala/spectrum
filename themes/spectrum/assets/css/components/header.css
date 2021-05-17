@@ -1,0 +1,35 @@
+@import '../vars.css';
+
+#layout-nav{
+    padding: 22px 0;
+}
+
+#layout-nav .navbar-content ul.links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#layout-nav .navbar-content ul.links li{
+    display: inline-block;
+    margin: 12px;
+}
+
+#layout-nav .navbar-content ul.links li a{
+    text-decoration: none;
+    color: black;
+}
+
+#layout-nav .navbar-content ul.links li a:hover{
+    color: var(--blue-color);
+}
+
+#layout-nav .navbar-content ul.links li a button {
+    background-color: var(--blue-color);
+    border: none;
+    padding: 5px 15px;
+}
+#layout-nav .navbar-content ul.links li a.active{
+     color: var(--blue-color);
+ }

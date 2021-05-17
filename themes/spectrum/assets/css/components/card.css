@@ -1,0 +1,27 @@
+.card-wrapper {
+    margin: 3.5rem;
+}
+
+.card-wrapper h1{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card-content{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+}
+
+.card-content .card-image{
+    max-width: 50%;
+}
+
+.card-content .card-image img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-content p{
+    margin-right: 20px;
+}

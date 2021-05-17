@@ -1,0 +1,24 @@
+.page-title-card-wrapper{
+    display: flex;
+    margin: 2.5rem auto;
+}
+
+.page-title-card-wrapper .left .page-title-card-text{
+    background-color: white;
+    padding: 2rem;
+}
+
+.page-title-card-wrapper .left{
+    width: 50%;
+}
+.page-title-card-wrapper .left h1{
+    margin: 0.5rem auto 1rem 2rem;
+}
+
+.page-title-card-wrapper .right {
+    width: 50%;
+}
+
+.page-title-card-wrapper .right .page-title-image-wrapper img {
+    max-width: 100%;
+}

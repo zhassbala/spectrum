@@ -1,0 +1,50 @@
+/* Vars */
+@import 'vars.css';
+
+/* Components */
+@import 'components/header.css';
+@import 'components/footer.css';
+
+@import 'components/navbar.css';
+
+@import 'components/groups.css';
+@import 'components/features.css';
+@import 'components/card.css';
+@import 'components/contactform.css';
+@import 'components/page-title-card.css';
+
+
+/* Pages */
+@import 'mainpage/index.css';
+@import 'aboutus/index.css';
+
+:root{
+    font-size: 16px;
+}
+
+*:focus {
+    outline: none;
+}
+
+button.btn-primary{
+    background-color: var(--blue-color);
+    border: none;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+#page-content {
+    margin-left: var(--nav-width);
+}
+
+.card-3 {
+    width: 33%;
+    display: inline-block;
+}
+
+.card-4 {
+    width: 25%;
+    display: inline-block;
+}

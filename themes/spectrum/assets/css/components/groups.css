@@ -1,0 +1,48 @@
+@import '../vars.css';
+
+.groups-wrapper {
+    display: inline-block;
+    height: 15rem;
+    padding: 24px 16px;
+    transition: all .5s ease;
+    background-color: white;
+    border: solid var(--bg-color) 0.5px;
+}
+
+.groups-wrapper > a > h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.groups-wrapper a{
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.groups-wrapper:hover{
+    background-color: var(--blue-color);
+    transform: scale(1.02);
+    color: white;
+    border: none;
+}
+
+.groups-wrapper:hover * {
+    color: white;
+}
+
+.groups-wrapper p{
+    font-size: 18px;
+}
+
+.groups__price span {
+    color: var(--blue-color);
+}
+
+.groups__price span.years-number{
+    font-size: 3rem;
+    font-weight: 600;
+}

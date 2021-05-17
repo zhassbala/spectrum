@@ -1,0 +1,28 @@
+.features-wrapper{
+    background-color: grey;
+    color: white;
+    background-image: url('../../images/bg-image-features.jpeg');
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.features-cards{
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.features-list{
+    display: flex;
+}
+
+.features-cards .features-card {
+    height: 21rem;
+    margin: 0;
+    text-align: center;
+    padding: 7.5rem 20px;
+    font-weight: 600;
+}
+
+.features-card i{
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}

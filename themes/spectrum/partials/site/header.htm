@@ -1,0 +1,69 @@
+==
+function onStart()
+{
+    $this['backendUrl'] = Backend::url('/');
+}
+==
+<!-- Nav -->
+
+<nav id='layout-nav' class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{{ 'assets/images/logo-header.png'|theme }}" alt="" height="48">
+      </a>
+      
+      <div class="navbar-content">
+          <ul class="links">
+            <li>
+                <a href="{{ 'home'|page }}" class="{% if this.page.id == 'home' %}active{% endif %}">Home</a>
+            </li>
+            <li>
+                <a href="{{ 'academics'|page }}" class="{% if this.page.id == 'academics' %}active{% endif %}">Academics</a>
+            </li>
+            <li>
+                <a href="#" class="{% if this.page.id == 'campus' %}active{% endif %}">Campuses</a>
+            </li>
+            <li>
+                <a href="#" class="{% if this.page.id == 'admissions' %}active{% endif %}">Admissions</a>
+            </li>
+            <li>
+                <a href="#" class="{% if this.page.id == 'work' %}active{% endif %}">Work with us</a>
+            </li>
+            <li>
+                <a href="#">Edupage</a>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <button class="btn btn-primary">Apply Now</button>
+                </a>
+            </li>
+            
+            <li></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ 'home'|page }}">October Demo</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="separator hidden-xs"></li>
+                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>
+                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
+                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
+                <li><a href="{{ backendUrl }}" target="backend">Sign in to the Backend</a></li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
