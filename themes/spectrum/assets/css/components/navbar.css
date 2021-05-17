@@ -1,10 +1,21 @@
 @import '../vars.css';
 
+body.no-scroll{
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar{
+    position: static;
+}
+
 #navbar{
     width: var(--nav-width);
     height: 100vh;
     position: fixed;
     padding: 1.5rem 0;
+    background-color: var(--nav-color);
+    transition: width 200ms ease;
 }
 
 ul#navbar-nav {
@@ -30,4 +41,26 @@ ul#navbar-nav li i {
     margin-bottom: 7.5rem;
     width: 10rem;
     transform: rotate(-90deg);
+}
+
+.navbar-menu{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - var(--header-height));
+    background-color: black;
+    z-index: 10;
+    top: var(--header-height);
+    left: var(--nav-width);
+}
+
+#burger-menu.__active .navbar-menu {
+    transition: all .4s ease;
+}
+
+#burger-menu.__active .navbar-menu{
+    visibility: visible;
+    transform: translate(0);
+    opacity: 1;
 }

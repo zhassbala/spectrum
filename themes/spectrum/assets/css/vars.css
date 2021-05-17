@@ -2,5 +2,8 @@
     --blue-color: #005680;
     --bg-color: #f3f1f2;
 
-    --nav-width: 4.5rem
+    --header-height: 5rem;
+
+    --nav-width: 4.5rem;
+    --nav-color: #f9f9f9;
 }
